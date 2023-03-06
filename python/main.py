@@ -20,7 +20,7 @@ emailedu = mhs.sivitas.setemailedu("ujang@email.edu")
 namaprodi = mhs.prodi.setnama_prodi("Teknik Sastra")
 kodeprodi = mhs.prodi.setkode_prodi("TS01")
 namamatkul = mhs.prodi.course.setnama_matakuliah("Rancangan Sirkuit Tata Bahasa")
-list.append(mahasiswa(NIK, NIM, nama, jeniskelamin, fakultas))
+list.append(mahasiswa(NIK, NIM, nama, jeniskelamin, fakultas,asaluniv, emailedu, namaprodi, kodeprodi, namamatkul))
 
 NIK1 = mhs.setNIK("02")
 NIM2 = mhs.setNIM("2102")
@@ -52,7 +52,7 @@ dosen.sivitas.setemailedu("aprodi@mail.edu")
 i = 1
 print("list data : ")
 for mhs in list :
-    print(str(i) + ".", mhs.getNIK(), "|", mhs.getNIM(), "|", mhs.getnama()
-          , mhs.getjeniskelamin(), "|", mhs.sivitas.getfakultas(), "|", mhs.sivitas.getemailedu()
+    print(str(i) + ".", mhs.getNIK(), "|", mhs.getNIM(), "|", mhs.getnama(), "|"
+          , mhs.getjeniskelamin(), "|", mhs.sivitas.getfakultas(), "|", mhs.sivitas.getemailedu(), "|"
           , mhs.sivitas.getasaluniv(), "|", mhs.prodi.getkode_prodi(), "|", mhs.prodi.getnama_prodi())
     i += 1

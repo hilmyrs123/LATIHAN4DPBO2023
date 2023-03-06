@@ -11,7 +11,15 @@ class mahasiswa(Human):
         self.__NIM = NIM
 
         self.sivitas = SivitasAkademik()
+        self.sivitas.__fakultas = fakultas
+        self.sivitas.__asaluniv = asaluniv
+        self.sivitas.__emailedu = emailedu
+
         self.prodi = ProgramStudi()
+        self.prodi.__kode_prodi = kode_prodi
+        self.prodi.__nama_prodi = nama_prodi
+
+        self.prodi.course.__nama_matakuliah = nama_matakuliah
 
 
     def getNIM(self):
