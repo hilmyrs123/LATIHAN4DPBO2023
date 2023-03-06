@@ -6,4 +6,4 @@ dan juga adanya kesamaan atribut
 Kelas SivitasAkademik berperan sebagai component class untuk kelas Mahasiswa dan Dosen
 yang berperan sebagai composite class
 
-Kelas ProgramStudi
+Kelas ProgramStudi berperan menjadi composite class dan mempunyai kelas course
