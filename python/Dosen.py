@@ -10,7 +10,7 @@ class Dosen(Human):
         self.__pend_terakhir = pend_terakhir
         self.__keahlian = keahlian
 
-        self.fakultas = SivitasAkademik()
+        self.sivitas = SivitasAkademik()
         self.prodi = ProgramStudi()
 
     def getNIP(self):
