@@ -10,8 +10,8 @@ dosen = Dosen()
 list = []
 
 #entry data
-NIK = str(mhs.setNIK("01"))
-NIM = str(mhs.setNIM("2101"))
+NIK = mhs.setNIK("01")
+NIM = mhs.setNIM("2101")
 nama = mhs.setnama("Ujang Van Houten")
 jeniskelamin = mhs.setjeniskelamin("L")
 fakultas = mhs.sivitas.setfakultas("FBTS")
@@ -20,7 +20,9 @@ emailedu = mhs.sivitas.setemailedu("ujang@email.edu")
 namaprodi = mhs.prodi.setnama_prodi("Teknik Sastra")
 kodeprodi = mhs.prodi.setkode_prodi("TS01")
 namamatkul = mhs.prodi.course.setnama_matakuliah("Rancangan Sirkuit Tata Bahasa")
-list.append(mahasiswa(NIK, NIM, nama, jeniskelamin, fakultas,asaluniv, emailedu, namaprodi, kodeprodi, namamatkul))
+#list.append(mahasiswa(NIK, NIM, nama, jeniskelamin, fakultas,asaluniv, emailedu, namaprodi, kodeprodi, namamatkul))
+
+list.append(mahasiswa(mhs.setNIK("01")))
 
 NIK1 = mhs.setNIK("02")
 NIM2 = mhs.setNIM("2102")
